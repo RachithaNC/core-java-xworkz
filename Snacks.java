@@ -1,14 +1,37 @@
-class Snacks{
-
-String snacksName;
-int price;
-String type;
-String mfDate;
-
-public void toEat(){
-System.out.println("snacks for eat");
+class Snacks {
+    String name;
+    int quantity;
+    String type;
+	String quality;
+	int price;
+	
+	
+	public Snacks(String name, int quantity, String type, String quality, int price){
+		this.name = name;
+		this.quantity = quantity;
+		this.type = type;
+		this.quality = quality;
+		this.price = price;
+		
+	}
+    
+    public void eat() {
+        System.out.println("Eating " + name);
+    }
 }
 
 
-
+/*
+class Snacks {
+    String name;
+    int quantity;
+    String type;
+	String quality;
+	int price;
+    
+    public void eat() {
+        System.out.println("Eating " + name);
+    }
 }
+
+*/

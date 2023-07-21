@@ -1,18 +1,36 @@
-class Umbrella{
-  
-  String brandname;
-  String colour;
-  String pattern;
-  String type;
-  int price;
-  
-  
-  
-  
-  public void toWear(){
-  
-	System.out.println("Information of the Umbrella :");
-  
-  
-  }
- }
+class Umbrella {
+    String type;
+    String color;
+    double price;
+    int size;
+	
+	public Umbrella(String type, String color, double price, int size){
+		
+		this.type = type;
+		this.color = color;
+		this.price = price;
+		this.size = size;
+	}
+	
+
+    public void purpose() {
+       
+	   
+    }
+}
+
+
+/*
+class Umbrella {
+    String type;
+    String color;
+    double price;
+    int size;
+	
+
+    public void purpose() {
+       
+	   
+    }
+}
+*/

@@ -1,99 +1,293 @@
-class  WalletTester{
+class WalletTester {
+    public static void main(String[] args) {
+        Wallet wallet1 = new Wallet("Bifold", "Louis Vuitton", 500.0, "Leather", 6);
+        System.out.println("Wallet 1 Details:");
+        System.out.println("Type: " + wallet1.type);
+        System.out.println("Brand: " + wallet1.brand);
+        System.out.println("Price: $" + wallet1.price);
+        System.out.println("Material: " + wallet1.material);
+        System.out.println("Card Slots: " + wallet1.cardSlots);
+        wallet1.storeMoney();
+        wallet1.retrieveMoney();
+        System.out.println();
 
-public static void main(String s[]){
+        Wallet wallet2 = new Wallet("Trifold", "Gucci", 300.0, "Leather", 8);
+        System.out.println("Wallet 2 Details:");
+        System.out.println("Type: " + wallet2.type);
+        System.out.println("Brand: " + wallet2.brand);
+        System.out.println("Price: $" + wallet2.price);
+        System.out.println("Material: " + wallet2.material);
+        System.out.println("Card Slots: " + wallet2.cardSlots);
+        wallet2.storeMoney();
+        wallet2.retrieveMoney();
+        System.out.println();
 
-System.out.println("1st copy of wallet");
-Wallet  wallet=new Wallet();
-wallet.walletMaterialType="leather";
-wallet.contryOfOrigin="japan";
-wallet. price= 500;
-wallet.noOfCompotments=2;
-wallet.forSafety();
-System.out.println(wallet.walletMaterialType+ " wallet material type " +wallet.contryOfOrigin+ " is a contry of origin of wallet "+ wallet. price+ " is a price of wallet" + wallet.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet3 = new Wallet("Slim", "Prada", 400.0, "Leather", 4);
+        System.out.println("Wallet 3 Details:");
+        System.out.println("Type: " + wallet3.type);
+        System.out.println("Brand: " + wallet3.brand);
+        System.out.println("Price: $" + wallet3.price);
+        System.out.println("Material: " + wallet3.material);
+        System.out.println("Card Slots: " + wallet3.cardSlots);
+        wallet3.storeMoney();
+        wallet3.retrieveMoney();
+        System.out.println();
 
-System.out.println("2nd copy of wallet");
-Wallet  wallet1=new Wallet();
-wallet1.walletMaterialType="Fabric";
-wallet1.contryOfOrigin="India";
-wallet1. price= 600;
-wallet1.noOfCompotments=1;
-wallet1.forSafety();
-System.out.println(wallet1.walletMaterialType+ " wallet material type " +wallet1.contryOfOrigin+ " is a contry of origin of wallet "+ wallet1. price+ " is a price of wallet" + wallet1.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet4 = new Wallet("Money Clip", "Montblanc", 250.0, "Leather", 2);
+        System.out.println("Wallet 4 Details:");
+        System.out.println("Type: " + wallet4.type);
+        System.out.println("Brand: " + wallet4.brand);
+        System.out.println("Price: $" + wallet4.price);
+        System.out.println("Material: " + wallet4.material);
+        System.out.println("Card Slots: " + wallet4.cardSlots);
+        wallet4.storeMoney();
+        wallet4.retrieveMoney();
+        System.out.println();
 
-System.out.println("3rd copy of wallet");
-Wallet  wallet2=new Wallet();
-wallet2.walletMaterialType="leather";
-wallet2.contryOfOrigin="USA";
-wallet2. price= 700;
-wallet2.noOfCompotments=3;
-wallet2.forSafety();
-System.out.println(wallet2.walletMaterialType+ " wallet material type " +wallet2.contryOfOrigin+ " is a contry of origin of wallet "+ wallet2. price+ " is a price of wallet" + wallet2.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet5 = new Wallet("Card Holder", "Hermes", 600.0, "Leather", 12);
+        System.out.println("Wallet 5 Details:");
+        System.out.println("Type: " + wallet5.type);
+        System.out.println("Brand: " + wallet5.brand);
+        System.out.println("Price: $" + wallet5.price);
+        System.out.println("Material: " + wallet5.material);
+        System.out.println("Card Slots: " + wallet5.cardSlots);
+        wallet5.storeMoney();
+        wallet5.retrieveMoney();
+        System.out.println();
 
-System.out.println("4th copy of wallet");
-Wallet  wallet3=new Wallet();
-wallet3.walletMaterialType="fabric";
-wallet3.contryOfOrigin="africa";
-wallet3. price= 500;
-wallet3.noOfCompotments=4;
-wallet3.forSafety();
-System.out.println(wallet3.walletMaterialType+ " wallet material type " +wallet3.contryOfOrigin+ " is a contry of origin of wallet "+ wallet3. price+ " is a price of wallet" + wallet3.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet6 = new Wallet("Bifold", "Coach", 150.0, "Leather", 4);
+        System.out.println("Wallet 6 Details:");
+        System.out.println("Type: " + wallet6.type);
+        System.out.println("Brand: " + wallet6.brand);
+        System.out.println("Price: $" + wallet6.price);
+        System.out.println("Material: " + wallet6.material);
+        System.out.println("Card Slots: " + wallet6.cardSlots);
+        wallet6.storeMoney();
+        wallet6.retrieveMoney();
+        System.out.println();
 
-System.out.println("5th copy of wallet");
-Wallet  wallet4=new Wallet();
-wallet4.walletMaterialType="leather";
-wallet4.contryOfOrigin="America";
-wallet4. price= 800;
-wallet4.noOfCompotments=5;
-wallet4.forSafety();
-System.out.println(wallet4.walletMaterialType+ " wallet material type " +wallet4.contryOfOrigin+ " is a contry of origin of wallet "+ wallet4. price+ " is a price of wallet" + wallet4.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet7 = new Wallet("Trifold", "Fossil", 80.0, "Leather", 6);
+        System.out.println("Wallet 7 Details:");
+        System.out.println("Type: " + wallet7.type);
+        System.out.println("Brand: " + wallet7.brand);
+        System.out.println("Price: $" + wallet7.price);
+        System.out.println("Material: " + wallet7.material);
+        System.out.println("Card Slots: " + wallet7.cardSlots);
+        wallet7.storeMoney();
+        wallet7.retrieveMoney();
+        System.out.println();
 
-System.out.println("6th copy of wallet");
-Wallet  wallet5=new Wallet();
-wallet5.walletMaterialType="fabric";
-wallet5.contryOfOrigin="Japan";
-wallet5. price= 500;
-wallet5.noOfCompotments=6;
-wallet5.forSafety();
-System.out.println(wallet5.walletMaterialType+ " wallet material type " +wallet5.contryOfOrigin+ " is a contry of origin of wallet "+ wallet5. price+ " is a price of wallet" + wallet5.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet8 = new Wallet("Slim", "Michael Kors", 200.0,  "Leather", 6);
+        System.out.println("Wallet 8 Details:");
+        System.out.println("Type: " + wallet8.type);
+        System.out.println("Brand: " + wallet8.brand);
+        System.out.println("Price: $" + wallet8.price);
+        System.out.println("Material: " + wallet8.material);
+        System.out.println("Card Slots: " + wallet8.cardSlots);
+        wallet8.storeMoney();
+        wallet8.retrieveMoney();
+        System.out.println();
 
-System.out.println("7th copy of wallet");
-Wallet  wallet6=new Wallet();
-wallet6.walletMaterialType="leather";
-wallet6.contryOfOrigin="odissa";
-wallet6. price= 900;
-wallet6.noOfCompotments=2;
-wallet6.forSafety();
-System.out.println(wallet6.walletMaterialType+ " wallet material type " +wallet6.contryOfOrigin+ " is a contry of origin of wallet "+ wallet6. price+ " is a price of wallet" + wallet6.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet9 = new Wallet("Money Clip", "Calvin Klein", 100.0, "leather", 2);
+        System.out.println("Wallet 9 Details:");
+        System.out.println("Type: " + wallet9.type);
+        System.out.println("Brand: " + wallet9.brand);
+        System.out.println("Price: $" + wallet9.price);
+        System.out.println("Material: " + wallet9.material);
+        System.out.println("Card Slots: " + wallet9.cardSlots);
+        wallet9.storeMoney();
+        wallet9.retrieveMoney();
+        System.out.println();
 
-System.out.println("8th copy of wallet");
-Wallet  wallet7=new Wallet();
-wallet7.walletMaterialType="fabric";
-wallet7.contryOfOrigin="India";
-wallet7. price= 1500;
-wallet7.noOfCompotments=1;
-wallet7.forSafety();
-System.out.println(wallet7.walletMaterialType+ " wallet material type " +wallet7.contryOfOrigin+ " is a contry of origin of wallet "+ wallet7. price+ " is a price of wallet" + wallet7.noOfCompotments+ " is a number of compotments in wallet" );
+        Wallet wallet10 = new Wallet("Card Holder", "Kate Spade", 120.0, "leather", 8);
 
-System.out.println("9th copy of wallet");
-Wallet  wallet8=new Wallet();
-wallet8.walletMaterialType="leather";
-wallet8.contryOfOrigin="India";
-wallet8. price= 2500;
-wallet8.noOfCompotments=2;
-wallet8.forSafety();
-System.out.println(wallet8.walletMaterialType+ " wallet material type " +wallet8.contryOfOrigin+ " is a contry of origin of wallet "+ wallet8. price+ " is a price of wallet" + wallet8.noOfCompotments+ " is a number of compotments in wallet" );
-
-System.out.println("10th copy of wallet");
-Wallet  wallet9=new Wallet();
-wallet9.walletMaterialType="fabric";
-wallet9.contryOfOrigin="America";
-wallet9. price= 1300;
-wallet9.noOfCompotments=2;
-wallet9.forSafety();
-System.out.println(wallet9.walletMaterialType+ " wallet material type " +wallet9.contryOfOrigin+ " is a contry of origin of wallet "+ wallet9. price+ " is a price of wallet" + wallet9.noOfCompotments+ " is a number of compotments in wallet" );
-
-
+        System.out.println("Wallet 10 Details:");
+        System.out.println("Type: " + wallet10.type);
+        System.out.println("Brand: " + wallet10.brand);
+        System.out.println("Price: $" + wallet10.price);
+        System.out.println("Material: " + wallet10.material);
+        System.out.println("Card Slots: " + wallet10.cardSlots);
+        wallet10.storeMoney();
+        wallet10.retrieveMoney();
+        System.out.println();
+    }
 }
 
 
+
+/*
+class WalletTester {
+    public static void main(String[] args) {
+        Wallet wallet1 = new Wallet();
+        wallet1.type = "Bifold";
+        wallet1.brand = "Louis Vuitton";
+        wallet1.price = 500.0;
+        wallet1.material = "Leather";
+        wallet1.cardSlots = 6;
+
+        System.out.println("Wallet 1 Details:");
+        System.out.println("Type: " + wallet1.type);
+        System.out.println("Brand: " + wallet1.brand);
+        System.out.println("Price: $" + wallet1.price);
+        System.out.println("Material: " + wallet1.material);
+        System.out.println("Card Slots: " + wallet1.cardSlots);
+        wallet1.storeMoney();
+        wallet1.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet2 = new Wallet();
+        wallet2.type = "Trifold";
+        wallet2.brand = "Gucci";
+        wallet2.price = 300.0;
+        wallet2.material = "Leather";
+        wallet2.cardSlots = 8;
+
+        System.out.println("Wallet 2 Details:");
+        System.out.println("Type: " + wallet2.type);
+        System.out.println("Brand: " + wallet2.brand);
+        System.out.println("Price: $" + wallet2.price);
+        System.out.println("Material: " + wallet2.material);
+        System.out.println("Card Slots: " + wallet2.cardSlots);
+        wallet2.storeMoney();
+        wallet2.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet3 = new Wallet();
+        wallet3.type = "Slim";
+        wallet3.brand = "Prada";
+        wallet3.price = 400.0;
+        wallet3.material = "Leather";
+        wallet3.cardSlots = 4;
+
+        System.out.println("Wallet 3 Details:");
+        System.out.println("Type: " + wallet3.type);
+        System.out.println("Brand: " + wallet3.brand);
+        System.out.println("Price: $" + wallet3.price);
+        System.out.println("Material: " + wallet3.material);
+        System.out.println("Card Slots: " + wallet3.cardSlots);
+        wallet3.storeMoney();
+        wallet3.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet4 = new Wallet();
+        wallet4.type = "Money Clip";
+        wallet4.brand = "Montblanc";
+        wallet4.price = 250.0;
+        wallet4.material = "Leather";
+        wallet4.cardSlots = 2;
+
+        System.out.println("Wallet 4 Details:");
+        System.out.println("Type: " + wallet4.type);
+        System.out.println("Brand: " + wallet4.brand);
+        System.out.println("Price: $" + wallet4.price);
+        System.out.println("Material: " + wallet4.material);
+        System.out.println("Card Slots: " + wallet4.cardSlots);
+        wallet4.storeMoney();
+        wallet4.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet5 = new Wallet();
+        wallet5.type = "Card Holder";
+        wallet5.brand = "Hermes";
+        wallet5.price = 600.0;
+        wallet5.material = "Leather";
+        wallet5.cardSlots = 12;
+
+        System.out.println("Wallet 5 Details:");
+        System.out.println("Type: " + wallet5.type);
+        System.out.println("Brand: " + wallet5.brand);
+        System.out.println("Price: $" + wallet5.price);
+        System.out.println("Material: " + wallet5.material);
+        System.out.println("Card Slots: " + wallet5.cardSlots);
+        wallet5.storeMoney();
+        wallet5.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet6 = new Wallet();
+        wallet6.type = "Bifold";
+        wallet6.brand = "Coach";
+        wallet6.price = 150.0;
+        wallet6.material = "Leather";
+        wallet6.cardSlots = 4;
+
+        System.out.println("Wallet 6 Details:");
+        System.out.println("Type: " + wallet6.type);
+        System.out.println("Brand: " + wallet6.brand);
+        System.out.println("Price: $" + wallet6.price);
+        System.out.println("Material: " + wallet6.material);
+        System.out.println("Card Slots: " + wallet6.cardSlots);
+        wallet6.storeMoney();
+        wallet6.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet7 = new Wallet();
+        wallet7.type = "Trifold";
+        wallet7.brand = "Fossil";
+        wallet7.price = 80.0;
+        wallet7.material = "Leather";
+        wallet7.cardSlots = 6;
+
+        System.out.println("Wallet 7 Details:");
+        System.out.println("Type: " + wallet7.type);
+        System.out.println("Brand: " + wallet7.brand);
+        System.out.println("Price: $" + wallet7.price);
+        System.out.println("Material: " + wallet7.material);
+        System.out.println("Card Slots: " + wallet7.cardSlots);
+        wallet7.storeMoney();
+        wallet7.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet8 = new Wallet();
+        wallet8.type = "Slim";
+        wallet8.brand = "Michael Kors";
+        wallet8.price = 200.0;
+        wallet8.material = "Leather";
+        wallet8.cardSlots = 6;
+
+        System.out.println("Wallet 8 Details:");
+        System.out.println("Type: " + wallet8.type);
+        System.out.println("Brand: " + wallet8.brand);
+        System.out.println("Price: $" + wallet8.price);
+        System.out.println("Material: " + wallet8.material);
+        System.out.println("Card Slots: " + wallet8.cardSlots);
+        wallet8.storeMoney();
+        wallet8.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet9 = new Wallet();
+        wallet9.type = "Money Clip";
+        wallet9.brand = "Calvin Klein";
+        wallet9.price = 100.0;
+        wallet9.material = "Leather";
+        wallet9.cardSlots = 2;
+
+        System.out.println("Wallet 9 Details:");
+        System.out.println("Type: " + wallet9.type);
+        System.out.println("Brand: " + wallet9.brand);
+        System.out.println("Price: $" + wallet9.price);
+        System.out.println("Material: " + wallet9.material);
+        System.out.println("Card Slots: " + wallet9.cardSlots);
+        wallet9.storeMoney();
+        wallet9.retrieveMoney();
+        System.out.println();
+
+        Wallet wallet10 = new Wallet();
+        wallet10.type = "Card Holder";
+        wallet10.brand = "Kate Spade";
+        wallet10.price = 120.0;
+        wallet10.material = "Leather";
+        wallet10.cardSlots = 8;
+
+        System.out.println("Wallet 10 Details:");
+        System.out.println("Type: " + wallet10.type);
+        System.out.println("Brand: " + wallet10.brand);
+        System.out.println("Price: $" + wallet10.price);
+        System.out.println("Material: " + wallet10.material);
+        System.out.println("Card Slots: " + wallet10.cardSlots);
+        wallet10.storeMoney();
+        wallet10.retrieveMoney();
+        System.out.println();
+    }
 }
+
+*/
